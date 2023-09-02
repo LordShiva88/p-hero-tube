@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-Hero Tube</title>
+
+    <!-- Link Into tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link into Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="container mx-auto p-5 lg:p-0">
+    <header>
+
+      <!-- nav section -->
+      <nav class="my-3">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img src="./icon/Logo.png" alt="" />
+          </div>
+          <div id="sort-by-view" class="navbar-center">
+            <a id="sort-btn" class="btn normal-case">Sort by view</a>
+          </div>
+          <div class="navbar-end">
+            <a href="blog.html" class="btn normal-case bg-[#FF1F3D] text-white"
+              >Blog</a
+            >
+          </div>
+        </div>
+      </nav>
+      <hr />
+
+      <!-- Load All Tab name  -->
+      <section class="">
+        <div
+          id="tab-container"
+          class="tabs gap-10 mt-8 flex flex-wrap justify-center"
+        ></div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <!-- No data found Section -->
+        <div id="no-data" class="text-center mt-20"></div>
+        
+        <!-- display all card section -->
+        <div
+          id="card-container"
+          class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6"
+        ></div>
+      </section>
+    </main>
+
+    <!-- Link Into JavaScript File -->
+    <script src="index.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>
